@@ -1,0 +1,14 @@
+<h1> enter username
+    and password
+</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <label for="username"></label>
+    username : <input type="text" name="username">
+    <label for="password"></label>
+    password : <input type="text" name="password">
+    <button type="submit">submit</button>
+    <a href="{% url 'home' %}">view list!</a>
+
+</form>
